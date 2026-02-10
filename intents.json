@@ -1,0 +1,432 @@
+{
+  "intents": [
+
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "hi there",
+        "hello bot",
+        "hey chatbot"
+      ],
+      "responses": [
+        "Hello! How can I help you?",
+        "Hi there! What would you like to know?",
+        "Hey! I'm here to assist you."
+      ]
+    },
+
+    {
+      "tag": "admission",
+      "patterns": [
+        "admission",
+        "college admission",
+        "how to get admission",
+        "how can I join college",
+        "admission process",
+        "how to apply for admission",
+        "college joining procedure",
+        "admission details",
+        "how do I enroll",
+        "joining process"
+      ],
+      "responses": [
+        "Admissions start in June.",
+        "You can apply online through the college website.",
+        "Admissions are based on merit and entrance exams."
+      ]
+    },
+
+    {
+      "tag": "courses",
+      "patterns": [
+        "courses offered",
+        "what courses are available",
+        "branches available",
+        "departments in college",
+        "engineering branches",
+        "list of courses",
+        "what can I study here"
+      ],
+      "responses": [
+        "We offer CSE, ECE, EEE, Mechanical, and Civil Engineering courses."
+      ]
+    },
+
+    {
+      "tag": "cse",
+      "patterns": [
+        "cse",
+        "computer science",
+        "computer science engineering",
+        "cse course details",
+        "cse syllabus",
+        "cse subjects"
+      ],
+      "responses": [
+        "CSE focuses on programming, data structures, AI, ML, and software development."
+      ]
+    },
+
+    {
+      "tag": "ece",
+      "patterns": [
+        "ece",
+        "electronics",
+        "electronics and communication",
+        "ece course details",
+        "ece subjects"
+      ],
+      "responses": [
+        "ECE focuses on electronics, communication systems, VLSI, and signal processing."
+      ]
+    },
+
+    {
+      "tag": "fees",
+      "patterns": [
+        "fees",
+        "fee structure",
+        "college fees",
+        "how much is the fee",
+        "tuition fee",
+        "course fees",
+        "semester fees"
+      ],
+      "responses": [
+        "The fee structure varies by course. Please refer to the official college fee notification."
+      ]
+    },
+
+    {
+      "tag": "scholarship",
+      "patterns": [
+        "scholarship",
+        "fee concession",
+        "financial aid",
+        "government scholarship",
+        "merit scholarship",
+        "scholarship details"
+      ],
+      "responses": [
+        "Scholarships are available for eligible students based on merit and government norms."
+      ]
+    },
+
+    {
+      "tag": "placements",
+      "patterns": [
+        "placements",
+        "placement details",
+        "job opportunities",
+        "companies visiting college",
+        "placement record",
+        "placement percentage",
+        "highest package",
+        "average package"
+      ],
+      "responses": [
+        "Our college has an excellent placement record with top companies visiting every year."
+      ]
+    },
+
+    {
+      "tag": "internships",
+      "patterns": [
+        "internships",
+        "internship opportunities",
+        "summer internship",
+        "industrial training",
+        "internship support"
+      ],
+      "responses": [
+        "The college provides strong support for internships and industrial training."
+      ]
+    },
+
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel",
+        "hostel facility",
+        "is hostel available",
+        "boys hostel",
+        "girls hostel",
+        "hostel fees",
+        "hostel rules"
+      ],
+      "responses": [
+        "Yes, separate hostel facilities are available for boys and girls with all basic amenities."
+      ]
+    },
+
+    {
+      "tag": "transport",
+      "patterns": [
+        "transport",
+        "college bus",
+        "bus facility",
+        "how to reach college",
+        "transportation"
+      ],
+      "responses": [
+        "College bus facilities are available from major locations in the city."
+      ]
+    },
+
+    {
+      "tag": "timings",
+      "patterns": [
+        "college timings",
+        "working hours",
+        "class timings",
+        "college time",
+        "daily schedule"
+      ],
+      "responses": [
+        "College timings are from 9:00 AM to 4:00 PM."
+      ]
+    },
+
+    {
+      "tag": "library",
+      "patterns": [
+        "library",
+        "library facility",
+        "books availability",
+        "digital library",
+        "library timings"
+      ],
+      "responses": [
+        "The college has a well-equipped library with digital and physical resources."
+      ]
+    },
+
+    {
+      "tag": "faculty",
+      "patterns": [
+        "faculty",
+        "teachers",
+        "professors",
+        "faculty details",
+        "experienced faculty"
+      ],
+      "responses": [
+        "Our faculty members are highly qualified and experienced."
+      ]
+    },
+
+    {
+      "tag": "exams",
+      "patterns": [
+        "exams",
+        "semester exams",
+        "internal exams",
+        "exam pattern",
+        "evaluation system"
+      ],
+      "responses": [
+        "The evaluation includes internal assessments and semester-end examinations."
+      ]
+    },
+
+    {
+      "tag": "attendance",
+      "patterns": [
+        "attendance",
+        "attendance percentage",
+        "minimum attendance",
+        "attendance rules"
+      ],
+      "responses": [
+        "A minimum of 75% attendance is required to appear for exams."
+      ]
+    },
+
+    {
+      "tag": "contact",
+      "patterns": [
+        "contact",
+        "contact details",
+        "phone number",
+        "email address",
+        "how to contact college"
+      ],
+      "responses": [
+        "You can contact the college through the official website or admission office."
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "exit",
+        "thank you",
+        "thanks"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "Thanks for visiting. See you again!",
+        "All the best for your future!"
+      ]
+    },
+
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Sorry, I didn't understand that.",
+        "Can you please rephrase your question?",
+        "I'm not sure about that. Could you ask something else?"
+      ]
+    }
+,
+      {
+        "tag": "how_are_you",
+  "patterns": [
+    "how are you",
+    "how r u",
+    "how are you doing",
+    "how is your day",
+    "how's your day",
+    "are you fine",
+    "how do you feel"
+  ],
+  "responses": [
+    "I'm doing great, thank you for asking 😊",
+    "I'm fine! Always ready to help you.",
+    "Doing well! How can I assist you today?"
+  ]
+}
+,
+{
+  "tag": "bot_name",
+  "patterns": [
+    "what is your name",
+    "who are you",
+    "tell me your name",
+    "your name",
+    "what should I call you"
+  ],
+  "responses": [
+    "You can call me SmartBot 🤖",
+    "I'm your smart AI assistant.",
+    "I'm a chatbot designed to help you."
+  ]
+}
+,
+{
+  "tag": "call_you",
+  "patterns": [
+    "what can i call you",
+    "how can i call you",
+    "can i call you bot",
+    "do you have a nickname"
+  ],
+  "responses": [
+    "You can call me SmartBot 😊",
+    "Any name is fine, but SmartBot sounds good!",
+    "I'm happy with SmartBot!"
+  ]
+}
+,
+{
+  "tag": "capabilities",
+  "patterns": [
+    "what can you do",
+    "how can you help me",
+    "what help do you provide",
+    "what are your features",
+    "what is your purpose"
+  ],
+  "responses": [
+    "I can help with college enquiries, admissions, courses, and general questions.",
+    "I'm here to answer your questions and assist you anytime.",
+    "I can provide information and guide you with your queries."
+  ]
+}
+,
+{
+  "tag": "thanks",
+  "patterns": [
+    "thank you",
+    "thanks",
+    "thanks a lot",
+    "thank you so much",
+    "appreciate it"
+  ],
+  "responses": [
+    "You're welcome 😊",
+    "Happy to help!",
+    "Anytime! Let me know if you need more help."
+  ]
+}
+,
+{
+  "tag": "small_talk",
+  "patterns": [
+    "what's up",
+    "how's it going",
+    "are you busy",
+    "are you free now"
+  ],
+  "responses": [
+    "I'm always here for you!",
+    "Just waiting to help you 😊",
+    "All good! What can I do for you?"
+  ]
+}
+,
+{
+  "tag": "bot_feelings",
+  "patterns": [
+    "are you happy",
+    "do you feel bored",
+    "are you tired",
+    "do you have emotions"
+  ],
+  "responses": [
+    "I don't have emotions, but I'm always happy to help you 😊",
+    "I don't get tired!",
+    "Helping you is what I do best!"
+  ]
+}
+,
+{
+  "tag": "ask_name",
+  "patterns": [
+    "what can i call you",
+    "what should i call you",
+    "can i know your name",
+    "tell me your name"
+  ],
+  "responses": [
+    "You can call me SmartBot . What should I call you?",
+    "I'm SmartBot. May I know your name?"
+  ]
+}
+,
+{
+  "tag": "tell_name",
+  "patterns": [
+    "my name is",
+    "i am",
+    "call me",
+    "this is",
+    "you can call me"
+  ],
+  "responses": [
+    "Nice to meet you!",
+    "Got it!"
+  ]
+}
+
+  ]
+}

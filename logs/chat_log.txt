@@ -1,0 +1,34 @@
+User: hi
+Bot: Hi there!
+
+User: admission
+Bot: Admissions start in June.
+
+User: bye
+Bot: Take care!
+
+2026-02-10 10:54:41.638293 | User: hi | Bot: Hello!
+2026-02-10 10:55:10.726509 | User: course details | Bot: Admissions start in June.
+2026-02-10 10:55:19.785558 | User: see you | Bot: Bye!
+2026-02-10 10:55:32.473916 | User: fvjsvndjn | Bot: I am not sure about that.
+2026-02-10 10:55:36.504571 | User: dfvd | Bot: Sorry, I didnâ€™t understand that.
+2026-02-10 10:55:47.794897 | User: fgvsdf | Bot: Can you please rephrase?
+2026-02-10 10:56:00.076639 | User: HELLO | Bot: Hello!
+2026-02-10 11:05:16.488383 | User: HII | Bot: Can you please rephrase your question?
+2026-02-10 11:05:22.118011 | User: HELLO | Bot: Hi there! What would you like to know?
+2026-02-10 11:05:30.373668 | User: WHAT IS YOUR NAME? | Bot: Iâ€™m your smart AI assistant.
+2026-02-10 11:11:58.445839 | User: HII | Bot: Can you please rephrase your question?
+2026-02-10 11:12:02.369506 | User: HEY | Bot: Hey! I'm here to assist you.
+2026-02-10 11:12:14.009201 | User: WHAT IS YOUR NAME? | Bot: I'm a chatbot designed to help you.
+2026-02-10 11:12:29.223078 | User: CAN YOU ASK ANY QUESTION | Bot: Sorry, I didn't understand that.
+2026-02-10 11:12:53.104020 | User: ASK NAME | Bot: I'm a chatbot designed to help you.
+2026-02-10 11:13:07.764952 | User: TELL NAME | Bot: Sorry, I didn't understand that.
+2026-02-10 11:13:18.938011 | User: CALL ME | Bot: Nice to meet you! How can I help you today?
+2026-02-10 11:13:32.684065 | User: my name is | Bot: Nice to meet you! How can I help you today?
+2026-02-10 11:13:58.347068 | User: can i know your name | Bot: I'm SmartBot. May I know your name?
+2026-02-10 11:14:01.582254 | User: chandana | Bot: Sorry, I didn't understand that.
+2026-02-10 11:16:54.145908 | User: can i know your name | Bot: You can call me SmartBot ðŸ¤–. What should I call you?
+2026-02-10 11:17:10.066361 | User: chandana | Bot: Nice to meet you, Chandana 😊 How can I help you today?
+2026-02-10 11:17:18.099739 | User: admission | Bot: Admissions are based on merit and entrance exams. Chandana 😊
+2026-02-10 11:18:10.385179 | User: hey | Bot: Hi there! What would you like to know? Chandana 😊
+2026-02-10 11:18:19.755768 | User: what is your name | Bot: I'm a chatbot designed to help you. Chandana 😊

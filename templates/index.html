@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart AI Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="app-container">
+    <div class="chat-card">
+
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="bot-info">
+                <div class="bot-avatar">🤖</div>
+                <div>
+                    <h3>SmartBot</h3>
+                    <span>Online</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div class="chat-body" id="chat-box">
+            <div class="message bot">
+                <div class="bubble">
+                    Hello 👋 I’m SmartBot. What can I help you with today?
+                </div>
+                <span class="time">Now</span>
+            </div>
+        </div>
+
+        <!-- Typing -->
+        <div class="typing" id="typing">SmartBot is typing...</div>
+
+        <!-- Input -->
+        <div class="chat-footer">
+            <input 
+                type="text" 
+                id="msg" 
+                placeholder="Type your message here..." 
+                onkeydown="handleEnter(event)"
+            >
+            <button onclick="send()">Send</button>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function send() {
+    const input = document.getElementById("msg");
+    const text = input.value.trim();
+    if (text === "") return;
+
+    const chatBox = document.getElementById("chat-box");
+
+    // User message
+    chatBox.innerHTML += `
+        <div class="message user">
+            <div class="bubble">${text}</div>
+            <span class="time">${new Date().toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'})}</span>
+        </div>
+    `;
+
+    input.value = "";
+    chatBox.scrollTop = chatBox.scrollHeight;
+
+    document.getElementById("typing").style.display = "block";
+
+    fetch("/get", {
+        method: "POST",
+        headers: {"Content-Type": "application/x-www-form-urlencoded"},
+        body: "msg=" + encodeURIComponent(text)
+    })
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("typing").style.display = "none";
+
+        chatBox.innerHTML += `
+            <div class="message bot">
+                <div class="bubble">${data.response}</div>
+                <span class="time">${data.time}</span>
+            </div>
+        `;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    });
+}
+
+function handleEnter(e) {
+    if (e.key === "Enter") send();
+}
+</script>
+
+</body>
+</html>
